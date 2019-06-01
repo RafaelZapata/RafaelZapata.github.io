@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 5</title>
+  </head>
+  <body>
+    <form class="" action="https://www.google.com.br/search" method="get">
+      Search: <input id="search" type="text" name="q" placeholder="Busca">
+      <input id="btnSubmit" type="Submit" value="submit">
+      <input id="btnClean" type="reset" value="Clean">
+      <p>Você trabalha como Webmaster?</p>
+      <input type="radio" name="radioGroup" value="Sim"> Sim <br>
+      <input type="radio" name="radioGroup" value="Não"> Não <br>
+      <input type="radio" name="radioGroup" value="Talvez"> Talvez <br>
+      <input type="radio" name="radioGroup" value="Quem sabe"> Quem sabe <br>
+      <p>O que você deseja aprender?</p>
+      <input type="checkbox" name="checkboxGroup" value="HTML"> HTML <br>
+      <input type="checkbox" name="checkboxGroup" value="CSS"> CSS <br>
+      <input type="checkbox" name="checkboxGroup" value="JavaScript"> JavaScript <br>
+      <input type="checkbox" name="checkboxGroup" value="PHP"> PHP <br>
+    </form>
+
+    <form class="" action="#" method="get">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email" required>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" autocomplete="on" autofocus pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+      </fieldset>
+    </form>
+
+    <form class="" action="#" method="get">
+      <select class="" name="nomeMenu">
+        <optgroup label="Linguagens para...">
+          <option selected value="valor1">HTML</option>
+          <option value="valor2">CSS</option>
+          <option value="valor3">JavaScript</option>
+        </optgroup>
+
+        <optgroup label="Linguagens para D.">
+          <option value="valor1">C</option>
+          <option value="valor2">C++</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <br>
+
+    <form class="" action="#" method="get">
+      <select class="" name="nomeMenu" size="7" multiple="multiple">
+        <optgroup label="Linguagens para...">
+          <option selected value="valor1">HTML</option>
+          <option value="valor2">CSS</option>
+          <option value="valor3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Linguagens para D.">
+          <option value="valor1">C</option>
+          <option value="valor2">C++</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <br>
+
+    <form class="" action="#" method="get">
+      <textarea name="name" rows="10" cols="40" maxlength="500" readonly disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in rhoncus lectus. Sed aliquet nisl eu neque imperdiet, finibus pellentesque ipsum faucibus. Sed sed purus id quam dignissim sollicitudin et in ante. Duis nec ex tempus, commodo lorem et, convallis diam. Donec lobortis augue condimentum facilisis blandit. Proin pharetra eleifend justo ac congue. Morbi quis mattis lorem. Maecenas scelerisque scelerisque felis a pretium. Aenean consectetur consectetur risus et efficitur. Nulla in dictum erat. Nullam tristique aliquam nunc vel consectetur. Quisque commodo faucibus tortor, at egestas ipsum pretium ac. Ut mauris ante, vehicula ut viverra vel, aliquam et ante. Integer a nibh augue. Ut sed fringilla sapien. Etiam nulla elit, fringilla ac pellentesque ut, pharetra nec magna.</textarea>
+    </form>
+
+    <br>
+
+    <form class="" action="#" method="get">
+      <input type="file"><br>
+      <input type="date"><br>
+      <input type="month"><br>
+      <input type="url"><br>
+      <input type="search"><br>
+      <input type="range"><br>
+      <input type="color"><br>
+      <input type="tel"><br>
+    </form>
+  </body>
+</html>
