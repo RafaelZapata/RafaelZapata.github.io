@@ -144,7 +144,7 @@
                     <td>
                         <input type="text" name="cep" id="cep" size="5" maxlength="5">
                         -
-                        <input type="text" name="cep2" id="cep" size="3" maxlength="3">
+                        <input type="text" name="cep2" id="cep2" size="3" maxlength="3">
                     </td>
                 </tr>
             </table>
@@ -161,7 +161,7 @@
                         <label for="email">E-mail:</label>
                     </td>
                     <td>
-                        <input type="text" name="" id="email">
+                        <input type="text" name="email" id="email">
                     </td>
                 </tr>
 
@@ -170,7 +170,7 @@
                         <label for="imgPerfil">Imagem de perfil:</label>
                     </td>
                     <td>
-                        <input type="file" id="imgAvatar">
+                        <input type="file" id="imgPerfil">
                     </td>
                 </tr>
                 
@@ -179,7 +179,7 @@
                         <label for="login">Login de usuário:</label>
                     </td>
                     <td>
-                        <input type="text" name="" id="login">
+                        <input type="text" name="login" id="login">
                     </td>
                 </tr>
                 
@@ -188,7 +188,7 @@
                         <label for="password">Senha:</label>
                     </td>
                     <td>
-                        <input type="password" name="" id="password" required>
+                        <input type="password" name="password" id="password" required>
                     </td>
                 </tr>
                 
@@ -197,7 +197,7 @@
                         <label for="confirmPassword">Confirme a senha:</label>
                     </td>
                     <td>
-                        <input type="password" name="" id="confirmPassword" required>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
                     </td>
                 </tr>
             </table>
@@ -211,25 +211,25 @@
             <table>
                 <tr>
                     <td>
-                        <label for="webmaster">Você deseja trabalhar como Webmaster?</label>
+                        <label>Você deseja trabalhar como Webmaster?</label>
                     </td>
                     <td>
-                        <input type="radio" name="radioGroup" id="webmaster" value="sim">Sim <br>
-                        <input type="radio" name="radioGroup" id="webmaster" value="nao">Não <br>
-                        <input type="radio" name="radioGroup" id="webmaster" value="talvez">Talvez <br>
-                        <input type="radio" name="radioGroup" id="webmaster" value="quemSabe">Quem sabe <br>
+                        <input type="radio" name="radioGroup" value="sim">Sim <br>
+                        <input type="radio" name="radioGroup" value="nao">Não <br>
+                        <input type="radio" name="radioGroup" value="talvez">Talvez <br>
+                        <input type="radio" name="radioGroup" value="quemSabe">Quem sabe <br>
                     </td>
                 </tr>
                 
                 <tr>
                     <td>
-                        <label for="learn">O que você deseja aprender?</label>
+                        <label>O que você deseja aprender?</label>
                     </td>
                     <td>
-                        <input type="checkbox" name="checkboxGroup" id="learn" value="html">HTML <br>
-                        <input type="checkbox" name="checkboxGroup" id="learn" value="css">CSS <br>
-                        <input type="checkbox" name="checkboxGroup" id="learn" value="javascript">Java Script <br>
-                        <input type="checkbox" name="checkboxGroup" id="learn" value="django">Django <br>
+                        <input type="checkbox" name="checkboxGroup" value="html">HTML <br>
+                        <input type="checkbox" name="checkboxGroup" value="css">CSS <br>
+                        <input type="checkbox" name="checkboxGroup" value="javascript">Java Script <br>
+                        <input type="checkbox" name="checkboxGroup" value="django">Django <br>
                     </td>
                 </tr>
                 
@@ -238,13 +238,14 @@
                         <label for="comment">Deixe seu comentário:</label>
                     </td>
                     <td>
-                        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
                     </td>
                 </tr>
             </table>
         </fieldset>
-        <input type="submit" id="btnSubmit" value="Submit">
-        <input type="reset" id="btnClean" value="Clean">
+
+        <input type="submit" id="btnSubmit" value="Salvar">
+        <input type="reset" id="btnClean" value="Limpar">
     </form>
 </body>
 </html>
