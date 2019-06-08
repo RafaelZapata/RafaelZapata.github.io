@@ -1,0 +1,29 @@
+nav ul {
+    list-style-type: none;
+    max-width: 180px;
+}
+
+nav ul li {
+    text-decoration: none;
+    background-color: #ccc;
+    
+}
+
+nav ul li:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: block;
+    margin: 1px;
+    padding: 15px;
+}
+
+a:hover {
+    background-color: purple;
+}

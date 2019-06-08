@@ -1,0 +1,58 @@
+body {
+    background-color: darkcyan;
+    background-size: cover;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50% 50%;
+    background-attachment: fixed;
+    /*font-family: 'Shadows Into Light', cursive;*/
+}
+
+h1{
+    color: #ffff00;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: brown;
+    text-decoration-style: none;
+    color: aqua;
+}
+
+nav ul {
+    text-decoration-style: none;
+    color: aqua;
+}
+
+nav ul li {
+    text-decoration-style: none; 
+    list-style: none;
+    display: inline-block;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+p{
+    font: italic bold 30px arial, sans-serif;
+    color: white;
+    text-align: justify;
+    letter-spacing: 2px;
+    text-indent: 2em inherit;
+}
+
+p:hover{
+    color: aqua;
+}
+
+a {
+    border-color: #ffff00;
+    background-color: #ffff00;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: 50% 50%;
+}
