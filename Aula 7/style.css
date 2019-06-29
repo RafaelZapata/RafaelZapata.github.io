@@ -1,0 +1,57 @@
+
+.grayBorder {
+    background-color: #555;
+    color: #ffffff;
+}
+
+h1 {
+    padding: 5px;
+    margin: 0%;
+}
+
+footer {
+    padding: 5px;
+}
+
+nav {
+    float: left; 
+    width: 200px; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+    padding-right: 1em;
+    margin: 0px;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    background-color: #ccc;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+    margin: 1px; 
+    padding: 15px;
+}
+
+a:hover {
+    background-color: purple;
+}
+
+section {
+    float: left;
+    width: 80%;
+    border-left: #000 solid 1px;
+    padding: 1em;
+}
+
+footer {
+    clear: both;
+}
