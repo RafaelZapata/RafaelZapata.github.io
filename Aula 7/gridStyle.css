@@ -4,18 +4,29 @@
     color: #ffffff;
 }
 
+body {
+    display: grid;
+    grid-template-areas: 
+        "h1 h1 h1"
+        "nav section section"
+        "footer footer footer";
+    background-image: linear-gradient(to bottom, grey, white);
+}
+
 h1 {
     padding: 5px;
     margin: 0%;
+    grid-area: h1;
 }
 
 footer {
     padding: 5px;
+    grid-area: footer;
 }
 
-nav {
-    float: left; 
+nav { 
     width: 200px; 
+    grid-area: nav;
 }
 
 ul {
@@ -39,17 +50,19 @@ a {
     display: block;
     margin: 1px; 
     padding: 15px;
+    transition: background-color 1s, transform 1s;
 }
 
 a:hover {
     background-color: purple;
+    transform: rotate(360deg);
 }
 
 section {
-    float: left;
     width: 80%;
     border-left: #000 solid 1px;
     padding: 1em;
+    grid-area: section;
 }
 
 section p {
@@ -57,7 +70,7 @@ section p {
 }
 
 footer {
-    clear: both;
+    grid-area: footer;
 }
 
 footer p {
