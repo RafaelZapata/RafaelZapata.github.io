@@ -1,0 +1,102 @@
+.borderColor {
+    background-image: linear-gradient(to top, purple, white);
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "h1 h1 h1"
+        "div section section"
+        "footer footer footer";
+    background-image: linear-gradient(to bottom right, #555, #fff);
+}
+
+h1 {
+    text-align: justify;
+    padding: 10px;
+    color: #000000;
+    grid-area: h1;
+    margin: 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    grid-area: section;
+    width: 80%;
+    border-left: #000 solid 1px;
+    padding: 1em;
+}
+
+div#leftColumn {
+    grid-area: div;
+    width: 200px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+div#leftColumn nav {
+    width: inherit;
+}
+
+div#leftColumn img {
+    width: 90%;
+    border: #000 solid 1px;
+}
+
+div#leftColumn div.box { 
+    width: 180px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+
+}
+
+div#leftColumn figure {
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 5px;
+}
+
+li {
+    text-align: center;
+    padding: 3px;
+}
+
+a {
+    background-color: #ccc;
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    font-family: sans-serif;
+    padding: 14px;
+    margin: 0.5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+    background-image: linear-gradient(purple, white, purple);
+}
+
+footer {
+    padding: 5px;
+    grid-area: footer;
+}
+
+footer p {
+    margin: 0px;
+}
