@@ -1,0 +1,401 @@
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "asideEsquerda section asideDireita"
+        "footer footer footer"; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 0px 10px 10px 10px;
+    margin-bottom: 10px; 
+}
+
+/* Classes */
+.btnFormat {
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    background-color: #cecece;
+    border: 1px #000000 solid;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.tittle {
+    float: left;
+    margin-left: 55px;
+}
+
+.tittles2 {
+    float: left;
+    clear: both;
+    margin-left: 255px;
+    padding-bottom: 10px; 
+}
+
+.direita {
+    text-align: right;
+}
+
+.text {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.text:hover {
+    color: #ffffff;
+    background-color: black; 
+}
+
+.legend figcaption {
+    opacity: 1;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #000000;
+    box-sizing: border-box; /*Delimita uma box dentro da borda*/
+}
+
+.asideRightFig {
+    display: grid;
+    grid-template-areas: 
+        "img fig";
+    margin: 0px;
+}
+
+.date {
+    font-style: italic;
+    text-align: right; 
+}
+
+.backgroundFieldset {
+    background-color: #dadada;
+}
+
+/* header */
+
+#cabecalho {
+    background: url("https://via.placeholder.com/1200x200");
+    grid-area: header;
+    margin-top: -20px;
+    margin-bottom: 10px; 
+}
+
+#firstNav ul {
+    list-style-type: none;
+}
+
+#firstNav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+#btnFindSchool {
+    margin-right: 70px;
+}
+
+#btnOk {
+    margin-right: 2px;
+    margin-left: -5px;
+}
+
+#secondNav ul {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+#secondNav li {
+    display: inline-block;
+}
+
+#secondNav a {
+    display: block;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border: 1px black solid;
+    box-shadow: none;
+    margin: 0px;
+}
+
+#secondNav a:hover {
+    background-color: #abc7ee;
+}
+
+/* Section */
+
+#principal {
+    display: grid;
+    grid-area: section;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-areas: 
+        "mainPanel"
+        "secondPanel"
+        "thirdPanel";
+
+}
+
+#mainPanel {
+    grid-area: mainPanel;
+    display: block;
+}
+
+#mainPanel h1 {
+    float: left;
+    /* clear: right; */
+}
+
+#moreNews {
+    margin-top: 25px;
+    /* clear: left; */
+    float: right;
+}
+
+#mainPanel img {
+    clear: left;
+    float: left;
+}
+
+#mainPanel p {
+    float: right;
+    width: 58%;
+}
+
+#secondPanel {
+    height: 150px;
+    grid-area: secondPanel;
+    display: block;
+}
+
+#secondPanel p {
+    float: left;
+    max-width: 80%;
+
+}
+
+#btnUp {
+    float: right;
+    width: 50px; 
+    margin-bottom: 10px;
+}
+
+#btnDown {
+    clear: right;
+    float: right;
+    width: 50px; 
+}
+
+#thirdPanel {
+    display: block;
+    grid-area: thirdPanel;
+    height: 150px;
+    padding: 0px 10px 10px 10px;
+
+}
+
+#thirdPanel h1 {
+    float: left;
+    grid-area: h1;
+}
+
+#thirdPanel p {
+    float: right;
+    grid-area: e;
+}
+
+#thirdPanel table {
+    clear: both;
+    padding: 0px;
+}
+
+#thirdPanel a{
+    padding-left: 10px;
+    color: #000000;
+}
+
+/* Aside Left */
+
+#left {
+    display: grid;
+    grid-area: asideEsquerda;
+    width: 250px;
+    grid-template-areas: 
+        "asideFigure"
+        "asideNav"
+        "asideH1"
+        "asideFieldset";
+}
+
+#left figure {
+    margin: 0px; 
+    grid-area: asideFigure;
+}
+
+#asideLeft {
+    width: inherit;
+    grid-area: asideNav;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#asideLeft ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#asideLeft li{
+    margin: 10px 0px 10px 0px;
+}
+
+#asideLeft a {
+    display: block;
+    padding: 8px;
+    border: 1px #000000 solid;
+    text-decoration: none;
+    box-shadow: none;
+    background-color: white;
+    margin: 0px;
+}
+
+#asideLeft a:hover {
+    background-color: #abc7ee;
+}
+
+#left h1 {
+    grid-area: asideH1;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 10px; 
+}
+
+#asideLeftFieldset {
+    grid-area: asideFieldset;
+    padding: 0px;
+    margin: 0px;
+    height: 93.5%;
+
+}
+
+#asideLeftFieldset ul {
+    list-style-type: none;
+}
+
+#asideLeftFieldset li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#asideLeftFieldset li::before {
+    position: absolute;
+    content: ">";
+    font-size: 10px;
+    top: 3px;
+    left: -20px;
+}
+
+#asideLeftFieldset a {
+    list-style-type: none;
+    color: #000000;
+}
+
+/* Aside Right */
+
+#right {
+    width: 300px;
+    grid-area: asideDireita;
+    display: grid;
+    grid-template-areas: 
+        "mainSpotlight"
+        "firstSmallSpotlight"
+        "secondMinorSpotlight";
+    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+#mainFigure {
+    grid-area: mainSpotlight;
+    margin: 0px;
+    position: relative;
+    height: 335px;
+}
+
+#asideRightFieldset {
+    grid-area: firstSmallSpotlight;
+    margin: 0px;
+    margin-top: -10px;
+    padding-top: 10px;
+    max-height: 140px;
+}
+
+#asideRightFieldset img {
+    grid-area: img;
+    margin-right: 10px;
+}
+
+#asideRightFieldset figcaption {
+    grid-area: fig;
+}
+
+#asideRightFieldset2 {
+    grid-area: secondMinorSpotlight;
+    margin: 0px;
+    margin-top: -20px;
+    padding-top: 10px;
+    max-height: 139px;
+}
+
+#asideRightFieldset2 img {
+    grid-area: img;
+    margin-right: 10px;
+}
+
+#asideRightFieldset2 figcaption {
+    grid-area: fig;
+}
+
+/* Footer */
+
+#rodape {
+    padding: 10px;
+    display: grid;
+    grid-area: footer;
+    border-top: 2px #cecece solid;
+    grid-template-areas: 
+        "esquerda meio direita";
+}
+
+#rodape nav {
+    grid-area: esquerda;
+}
+
+#rodape ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px; 
+}
+
+#rodape li {
+    display: inline-block;
+}
+
+#pageTop {
+    grid-area: meio;
+}
+
+#rodape p {
+    grid-area: direita;
+    font-size: 10pt;
+    text-align: right;
+}
