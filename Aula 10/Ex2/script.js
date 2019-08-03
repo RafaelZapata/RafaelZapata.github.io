@@ -7,11 +7,20 @@ btnElement.onclick = function validarEmail(){
     let divArroba = email.split('@');
     let divPonto = divArroba[1].split('.');
 
-    console.log(divPonto);
+    let casePonto = divPonto.length;
 
-    if(divArroba[0] < 1 || divArroba.length != 2 || divPonto[0] < 1 || divPonto.length != 2) {
+    if(divArroba[0] == '' || divArroba.length != 2 || divPonto[0] == '' || divPonto[1] == '') {
         alert('Email invalido');
     } else {
-        alert('Email valido');
+        switch (casePonto) {
+            case 2:
+                alert('Email valido');
+                break;
+            case 3:
+                (divPonto[2].length > 2) ? alert('Email invalido') : alert('Email valido'); 
+                break;
+            default:
+                break;
+        }
     }
 }
