@@ -1,47 +1,42 @@
-let qtdQuarto = document.querySelector('#quartos');
+let menorQueCincoAnos = document.querySelector('#idadeCrianca');
+let nome = document.querySelector('#nome');
 let dataChegada = document.querySelector('#inData');
 let dataSaida = document.querySelector('#outData');
 let tipoQuarto = document.querySelector('#tipoQuarto');
-let qtdQuarto = document.querySelector('#qtdQuarto');
+let tipoQuarto2 = document.querySelector('#tipoQuarto2');
+let tipoQuarto3 = document.querySelector('#tipoQuarto3');
 
 $(document).ready(function () {
 
-    function calcularEstadia(dataChegada, dataSaida, qtdQuarto, tipoQuarto){
-        let dataIn = new Date(dataChegada);
-        let dataOut = new Date(dataSaida);
-        let total;
-        let date = new Date(dataIn.getTime() - dataOut.getTime());
-        let dia = date.getDay();
+    function calcularEstadia(){
+        let dataIn = new Date(dataChegada.value);
+        let dataOut = new Date(dataSaida.value);
+        let total = 0;
+        let soma = 0;
+        const dia = 24 * 60 * 60 * 1000;
+        let nDias = (dataOut.getTime() - dataIn.getTime())/dia;
 
-        if(tipoQuarto == 1){
-            total = Number(qtdQuarto) * 139;
-        }else if(tipoQuarto == 2){
-            total = Number(qtdQuarto) * 220;
-        }else{
-            total = Number(qtdQuarto) * 340;
-        }
+        if (tipoQuarto.value == 1) soma += 139;
+        if (tipoQuarto.value == 2) soma += 220;
+        if (tipoQuarto.value == 3) soma += 340;
 
-        // let date = new Date(dataIn.getTime() - dataOut.getTime());
+        if (tipoQuarto2.value == 1) soma += 139;
+        if (tipoQuarto2.value == 2) soma += 220;
+        if (tipoQuarto2.value == 3) soma += 340;
 
-        // switch(tipoQuarto){
-        //     case 0:
-        //         total = qtdQuarto.value * qtdCrianca.value * date * 139;
-                
-        //     break;
-        //     case 1:
-        //         total = qtdQuarto.value * qtdCrianca.value * date * 220;
-        //     break;
-        //     case 2:
-        //         total = qtdQuarto.value * qtdCrianca.value * date * 340;
-        //     break;
-        // }
-        console.log(total);
+        if (tipoQuarto3.value == 1) soma += 139;
+        if (tipoQuarto3.value == 2) soma += 220;
+        if (tipoQuarto3.value == 3) soma += 340;
+
+        if (menorQueCincoAnos.value == 2) soma += 30;
+
+        total = soma*nDias;
 
         return total;
     }
 
     $('#btnReserva').click(function(){
-        let result = calcularEstadia(dataChegada, dataSaida, qtdQuarto, tipoQuarto);
-        console.log(result);
+        let result = calcularEstadia();
+        alert(`${nome.value}, o valor total da reserva ficará em R$${calcularEstadia()},00`);
     });
 });

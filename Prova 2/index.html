@@ -26,7 +26,7 @@
                                 <label id="check-in">Check-in: </label>
                             </td>
                             <td>
-                                <input type="text" id="inData">
+                                <input type="date" id="inData">
                             </td>
                         </tr>
                         <tr>
@@ -34,30 +34,54 @@
                                 <label id="check-out">Check-out: </label>
                             </td>
                             <td>
-                                <input type="text" id="outData">
+                                <input type="date" id="outData">
                             </td>
                         </tr>
                         <tr>
-                            <div id="quartos">
-                                <div id="result">
-                                    <td><label for="tipoQuarto">Tipo do quarto: </label></td>
-                                    <td>
-                                        <select name="tipoQuarto" id="tipoQuarto">
-                                            <option value="1">Single</option>
-                                            <option value="2">Double</option>
-                                            <option value="3">Triplo</option>
-                                        </select>
-                                    </td>
-                                </div>
+                            <div id="result">
+                                <td><label for="tipoQuarto">Tipo do quarto: </label></td>
+                                <td>
+                                    <select name="tipoQuarto" id="tipoQuarto">
+                                        <option value="0">Escolha...</option>
+                                        <option value="1">Single</option>
+                                        <option value="2">Double</option>
+                                        <option value="3">Triplo</option>
+                                    </select>
+                                </td>
                             </div>
                         </tr>
                         <tr>
-                            <td><label for="qtdQuartos">Quantidade quartos:</label></td>
+                            <div id="result2">
+                                <td><label for="tipoQuarto2">Tipo do quarto: </label></td>
+                                <td>
+                                    <select name="tipoQuarto2" id="tipoQuarto2">
+                                        <option value="0">Escolha...</option>
+                                        <option value="1">Single</option>
+                                        <option value="2">Double</option>
+                                        <option value="3">Triplo</option>
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div id="result">
+                                <td><label for="tipoQuarto3">Tipo do quarto: </label></td>
+                                <td>
+                                    <select name="tipoQuarto3" id="tipoQuarto3">
+                                        <option value="0">Escolha...</option>
+                                        <option value="1">Single</option>
+                                        <option value="2">Double</option>
+                                        <option value="3">Triplo</option>
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td><label for="crianca">Criança menor que 5 anos?</label></td>
                             <td>
-                                <select name="qtdQuarto" id="qtdQuarto">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
+                                <select name="idadeCrianca" id="idadeCrianca">
+                                    <option value="1">Não</option>
+                                    <option value="2">Sim</option>
                                 </select>
                             </td>
                         </tr>
@@ -66,6 +90,9 @@
             </form>
 
             <button id="btnReserva">Salvar</button>
+            <div id="apresentacao">
+
+            </div>
         </main>
         <footer>
 
