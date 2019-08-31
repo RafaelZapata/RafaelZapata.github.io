@@ -19,6 +19,6 @@ btnElement.onclick = function calcularData() {
     let month = date.getMonth();
     let year =date.getFullYear() - 1970;
 
-    pElement.innerHTML = `Dias: ${day} Meses: ${month} Anos: ${year}`;
+    pElement.innerHTML = `Dias: ${date} Meses: ${month} Anos: ${year}`;
 }
 

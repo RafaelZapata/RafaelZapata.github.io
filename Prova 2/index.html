@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Reserva Hotel</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de reservas</h1>
+        </header>
+        <main>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Cadastros para reserva</legend>
+                    <table>
+                        <tr>
+                            <td><label for="nome">Nome: </label></td>
+                            <td><input type="text" name="nome" id="nome"></td>
+                            <td><label for="telefone">Telefone: </label></td>
+                            <td><input type="text" name="telefone" id="telefone"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="check-in">Check-in: </label>
+                            </td>
+                            <td>
+                                <input type="text" id="inData">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="check-out">Check-out: </label>
+                            </td>
+                            <td>
+                                <input type="text" id="outData">
+                            </td>
+                        </tr>
+                        <tr>
+                            <div id="quartos">
+                                <div id="result">
+                                    <td><label for="tipoQuarto">Tipo do quarto: </label></td>
+                                    <td>
+                                        <select name="tipoQuarto" id="tipoQuarto">
+                                            <option value="1">Single</option>
+                                            <option value="2">Double</option>
+                                            <option value="3">Triplo</option>
+                                        </select>
+                                    </td>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td><label for="qtdQuartos">Quantidade quartos:</label></td>
+                            <td>
+                                <select name="qtdQuarto" id="qtdQuarto">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            <button id="btnReserva">Salvar</button>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
