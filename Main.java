@@ -1,57 +1,65 @@
-class MenuItem {
+abstract class Forma {
  
-    String nome;
-     
-    MenuItem(String nome) {
-        this.nome = nome;
+    protected Cor cor;
+    
+    public Forma(Cor c){
+        this.cor = c;
     }
+    
+    abstract public void aplicarCor();
      
 }
  
-interface Iterator {
-    boolean hasNext();
-    Object next();
+interface Cor {
+    public void aplicandoCor();
 }
  
-class MenuIterator implements Iterator {
+class Triangulo extends Forma {
  
-    MenuItem[] itens;
-    int posicao = 0;
-     
-    public MenuIterator(MenuItem[] itens) {
-        this.itens = itens;
+    public Triangulo(Cor c){
+        super(c);
     }
-     
-    public Object next() {
-        MenuItem menuItem = itens[posicao];
-        posicao++;
-        return menuItem;
-    }
-     
-    public boolean hasNext() {
-        if (posicao >= itens.length || itens[posicao] == null) {
-            return false;
-        } else {
-            return true;
-        }
+    
+    @Override
+    public void aplicarCor(){
+        System.out.print("Triangulo sendo preenchido com a cor ");
+        cor.aplicandoCor();
     }
      
 }
 
+class Pentagono extends Forma {
+ 
+    public Pentagono(Cor c){
+        super(c);
+    }
+    
+    @Override
+    public void aplicarCor(){
+        System.out.print("Pentagono sendo preenchido com a cor ");
+        cor.aplicandoCor();
+    }
+     
+}
+
+class CorVermelha implements Cor{
+    public void aplicandoCor(){
+        System.out.print("vermelho");
+    }
+}
+
+class CorVerde implements Cor{
+    public void aplicandoCor(){
+        System.out.print("verde");
+    }
+}
+
 public class Main {
     public static void main(String args []) {
-        MenuItem [] menuItens = new MenuItem[4];
-         
-        menuItens[0] = new MenuItem("Menu 1");
-        menuItens[1] = new MenuItem("Menu 2");
-        menuItens[2] = new MenuItem("Menu 3");
-        menuItens[3] = new MenuItem("Menu 4");
-         
-        Iterator menuIterator = new MenuIterator(menuItens);
-         
-        while (menuIterator.hasNext()) {
-            MenuItem menuItem = (MenuItem)menuIterator.next();
-            System.out.println(menuItem.nome);
-        }
+        Forma tri = new Triangulo(new CorVermelha());
+        tri.aplicarCor();
+        
+        Forma pent = new Pentagono(new CorVerde());
+        pent.aplicarCor();
     }
 }
